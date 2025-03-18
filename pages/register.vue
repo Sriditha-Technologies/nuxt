@@ -4,12 +4,14 @@
       <h1>Join Us Today</h1>
       <form>
         <p>Enter your email and password to register</p>
-        <label for="Your Email">Your Email</label>
-        <input type="text" Placeholder="Your Email" required />
-        <br />
-        <label for="password">Password</label>
+        <div>
+          <label for="Your Email">Your Email</label>
+          <input type="text" Placeholder="Your Email" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
         <input type="password" Placeholder="password" required />
-        <br />
+        </div>
         <input type="checkbox"> I agree the <u>Terms and conditions</u><br />
         <button type="submit">Register Now</button>
       </form>

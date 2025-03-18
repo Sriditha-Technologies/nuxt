@@ -3,12 +3,14 @@
        <h1>Sign In</h1>
        <form>
         <P>Enter your email and password to sign in.</P>
-        <label for="Your Email">Your Email</label>
-        <input type="text" Placeholder="Your Email" required />
-        <br />
-        <label for="password">Password</label>
-        <input type="password" Placeholder="password" required />
-        <br />
+        <div>
+          <label for="Your Email">Your Email</label>
+          <input type="text" Placeholder="Your Email" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" Placeholder="password" required />
+        </div>
         <input type="checkbox"> I agree the <u>Terms and conditions</u>
         <br />
         <button type="submit">Sign In</button>
