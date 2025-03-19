@@ -1,41 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-confi
+import {resolve} from "path";
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  future: {
-       compatibilityVersion: 4,
+  alias:{
+    "@":resolve(__dirname,"/"),
   },
-  experimental:{
-    sharedPrerenderData: false,
-    compileTemplate: true,
-    resetAsyncDataToUndefined: true,
-    templateUtils: true,
-    relativeWatchPaths: true,
-    defaults:{
-      useAsyncData: {
-        deep: true,
+  css:["~/assets/main.scss"],
+      postcss:{
+        plugins:{
+          tailwindcss:{},
+          autoprefixer:{},
+        },
       },
-    },
-  },
-
-  image: {
-    domains:['https:cdn.dummyjson.com']
-  },
-
-  unhead: {
-    renderSSRHeadOptions: {
-      omitLineBreaks: false,
-    },
-  },
-  devtools: { enabled: true },
+ 
   modules: ['@nuxtjs/tailwindcss','@nuxtjs/google-fonts','@nuxt/icon','@nuxt/image'],
 
-  googleFonts: {
-    families: {
-      Montserrat: true,
-    },
-  },
+  });
 
-    css: ['~/assets/css/tailwind.css'],
+  
 
- 
-});
+    
