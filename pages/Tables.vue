@@ -1,6 +1,6 @@
 <template>
-    <h1>Authors Table</h1>
     <div>
+        <h1 class="font-bold">Authors Table</h1>
         <table class="table">
             <thead>
                 <tr>
@@ -56,8 +56,9 @@
             </tbody>
         </table>
     </div>
-    <h1>Projects Table</h1>
+
     <div>
+        <h1 class="font-bold">Projects Table</h1>
         <table class="table">
             <thead>
                 <tr>
@@ -115,5 +116,4 @@
     </div>
 </template>
 
-<script setup lang="ts">
-</script>
+

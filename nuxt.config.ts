@@ -34,4 +34,8 @@ export default defineNuxtConfig({
       Montserrat: true,
     },
   },
+
+    css: ['~/assets/css/tailwind.css'],
+
+ 
 });

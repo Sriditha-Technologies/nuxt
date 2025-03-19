@@ -1,13 +1,14 @@
 <template>
     <div>
-        <h1 class="font-bold"><center>RichardDavis</center></h1>
+        <h1 class="font-bold"><center>RichardDavis/CEO/CO-Founder</center></h1>
         <p class="font-bold">Platform settings</p>
         <div>
             <section>
                 <h1 class="font-bold">Account</h1>
-                <p>Email me when someone followes me<br />
-                Email me when someone answers on my post<br />
-                Email me when someone mensions me</p>
+                <p>
+                <ToggleIcon />Email me when someone followes me<br />
+                <ToggleIcon />Email me when someone answers on my post<br />
+                <ToggleIcon />Email me when someone mensions me</p>
             </section>
             <section>
                 <h1 class="font-bold">Application</h1>
@@ -65,11 +66,13 @@
          </table>
         </div>
     </div>
+
+
     <div class="container">
         <h1 class="font-bold ">Projects</h1>
         <p>Architects design houses</p>
         <div>
-           <img src="~/asserts/images/home-decor-1.webp" alt="" />
+           <!--img src="~/asserts/images/home-decor-1.webp" alt="" />-->
             <h1>Project #1</h1>
             <p class="font-bold">Modern</p>
             <p>As uber works through a huge amount of internal management turmoil.</p>
@@ -78,7 +81,7 @@
             </button>
         </div>
         <div>
-            <img src="~/assets/images/home-decor-2.webp" alt="" />
+            <!--img src="~/assets/images/home-decor-2.webp" alt="" />-->
             <h1>Project #2</h1>
             <p class="font-bold">Scandinavin</p>
             <p>Music is something that every person has his or her own specific opinion about.</p>
@@ -87,7 +90,7 @@
             </button>
         </div> 
         <div>
-            <img src="~/assets/images/home-decor-3.webp" alt="" />
+            <!--img src="~/assets/images/home-decor-3.webp" alt="" />-->
             <h1>Project #3</h1>
             <p class="font-bold">Minimalist</p>
             <p>Different people have different taste, and various types on music.</p>
@@ -96,7 +99,7 @@
             </button>
         </div>
         <div>
-            <img src="~/assets/images/home-decor-4.avif" alt="" />
+            <!--img src="~/assets/images/home-decor-4.avif" alt="" />-->
             <h1>Project #4</h1>
             <p class="font-bold">Gothic</p>
             <p>Why would anyone pick blue over pink? Pink is obviously a better color.</p>
@@ -107,9 +110,5 @@
     </div>
 </template>
 
-<script setup>
-    import image from  '@/assets/images/home-decor-1.webp';
-    import image from  '@/assets/images/home-decor-2.webp';
-    import image from  '@/assets/images/home-decor-3.webp';
-    import image from  '@/assets/images/home-decor-4.avif';
+<script setup lang="ts">
 </script>

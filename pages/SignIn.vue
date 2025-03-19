@@ -1,6 +1,6 @@
 <template>
     <div>
-       <h1>Sign In</h1>
+       <center><h1 class="font-bold">Sign In</h1>
        <form>
         <P>Enter your email and password to sign in.</P>
         <div>
@@ -13,13 +13,14 @@
         </div>
         <input type="checkbox"> I agree the <u>Terms and conditions</u>
         <br />
-        <button type="submit">Sign In</button>
+        <button type="submit" class="inline-block px-7 px-3 bg-blue-600 text-white font-medium">Sign In</button>
        </form>
        <br />
         <input type="checkbox"> Subscribe me to newsletter Forgot password<br />
-        <span class="fa fa-google">Sign in with google</span><br /> 
-        <span class="fa fa-twitter">Sign in with twitter</span><br />  
+        <icon name="logos:google-icon"></icon>Sign in with google<br />
+        <icon name="logos:twitter"></icon>Sign in with twitter<br /> 
        <nuxt-link to="/register">Not Register? Create Account</nuxt-link>
+       </center>
     </div>
   </template>
   
