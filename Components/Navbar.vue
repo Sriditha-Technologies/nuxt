@@ -7,7 +7,7 @@
                 <NuxtLink class="mr-4" to="/Tables">Tables</NuxtLink>
                 <NuxtLink class="mr-4" to="/Notifications">Notifications</NuxtLink>
                 <input type="text" class="ml-4" placeholder="search...">
-                <NuxtLink class="ml-4" to="/SignIn">SignIn</NuxtLink>
+                <NuxtLink class="ml-4" to="/SignIn"><icon name="user"></icon>SignIn</NuxtLink>
             </div>
         </nav>
     </header>

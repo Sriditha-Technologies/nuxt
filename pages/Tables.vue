@@ -4,47 +4,11 @@
                 <h1>Authors Table</h1>
                 <ejs-treegrid :dataSource="data1" :treeColumns="['name']" :allowPaging="true">
                     <e-columns>
-                        <e-column field="Author" headerTemplate="'iconTemplate'" width="100"></e-column>
+                        <e-column field="Author" headerText="AUTHOR" width="100"></e-column>
                         <e-column field="Function" headerText="FUNCTION" width="150"></e-column>
                         <e-column field="Status" headerText="STATUS" width="150"></e-column>
                         <e-column field="Employed" headerText="EMPLOYED" width="150"></e-column>
                     </e-columns>
-                    <template v-slot:iconTemplate1>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Johnmichael</span>
-                        </div>
-                    </template>
-                    <template v-slot:iconTemplate2>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Alexa Liras</span>
-                        </div>
-                    </template>
-                    <template v-slot:iconTemplate3>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Laurent Perrier</span>
-                        </div>
-                    </template>
-                    <template v-slot:iconTemplate4>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Michellevi</span>
-                        </div>
-                    </template>
-                    <template v-slot:iconTemplate5>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Bruce Mans</span>
-                        </div>
-                    </template>
-                    <template v-slot:iconTemplate6>
-                        <div>
-                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
-                            <span class="companies" style="padding-left:10px;">Alexander</span>
-                        </div>
-                    </template>
                 </ejs-treegrid>
             </div>
             <div>
@@ -102,14 +66,6 @@
     
 <script setup>
 import { TreeGridComponent, ColumnsDirective, ColumnDirective,Page } from "@syncfusion/ej2-vue-treegrid";
-export default{
-    Components:{
-        'ejs-treegrid': TreeGridComponents,
-        'e-columns': ColumnsDirective,
-        'e-column': ColumnDirective
-    }
-}
-import { ref } from 'vue';
 
 // Data for the first Authors Table
 const data1 = ref([
@@ -123,12 +79,12 @@ const data1 = ref([
 
 // Data for the Second Projects Table
 const data2 = ref([
-  { Companies: 'Material XD Version', Members: 'profile', Budget: '$14,000', Completion: 60% },
-  { Companies: 'Add Progress Track', Members: 'profile', Budget: '$3,000', Completion: 10% },
-  { Companies: 'Fix PlatformError', Members: 'profile', Budget: 'Not Set', Completion: 100% },
-  { Companies: 'Launch Our Mobile App', Members: 'profile', Budget: '$20,000', Completion: 100% },
-  { Companies: 'Add the New Pricing Page', Members: 'profile', Budget: '$500', Completion: 25% },
-  { Companies: 'Redesign New Online Shop', Members: 'profile', Budget: '$2,000', Completion: 40% }
+  { Companies: 'Material XD Version', Members: 'profile', Budget: '$14,000', Completion: '60%' },
+  { Companies: 'Add Progress Track', Members: 'profile', Budget: '$3,000', Completion: '10%' },
+  { Companies: 'Fix PlatformError', Members: 'profile', Budget: 'Not Set', Completion: '100%' },
+  { Companies: 'Launch Our Mobile App', Members: 'profile', Budget: '$20,000', Completion: '100%' },
+  { Companies: 'Add the New Pricing Page', Members: 'profile', Budget: '$500', Completion: '25%' },
+  { Companies: 'Redesign New Online Shop', Members: 'profile', Budget: '$2,000', Completion: '40%' },
   ]);
 </script>
 
