@@ -4,14 +4,19 @@ export default defineNuxtConfig({
   alias:{
     "@":resolve(__dirname,"/"),
   },
-  css:["~/assets/main.scss"],
-      postcss:{
+  css:["~/assets/css/main.css","~assets/css/styles.css"],
+  build: {
+    postcss: {
+      postcssOptions:{
         plugins:{
           tailwindcss:{},
           autoprefixer:{},
-        },
+      }
+      
       },
- 
+    },      
+  },
+          
   modules: ['@nuxtjs/tailwindcss','@nuxtjs/google-fonts','@nuxt/icon','@nuxt/image'],
 
   });

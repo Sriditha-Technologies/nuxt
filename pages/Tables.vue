@@ -1,119 +1,149 @@
 <template>
-    <div>
-        <h1 class="font-bold">Authors Table</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>AUTHORS</th>
-                    <th>FUNCTIONS</th>
-                    <th>STATUS</th>
-                    <th>EMPLOYED</th>
-                </tr>
-           </thead>
-           <tbody>
-                <tr>
-                    <td>John michael</td>
-                    <td>Manager</td>
-                    <td>online</td>
-                    <td>23/04/18</td>
-                    <td>Edit</td>
-                </tr>
-                <tr>
-                    <td>Alexa Liras</td>
-                    <td>Programator</td>
-                    <td>offline</td>
-                    <td>11/01/19</td>
-                    <td>Edit</td>
-                </tr>
-                <tr>
-                    <td>Laurent Perrier</td>
-                    <td>executive</td>
-                    <td>online</td>
-                    <td>19/09/17</td>
-                    <td>Edit</td>
-                </tr>
-                <tr>
-                    <td>Michaellevi</td>
-                    <td>Programator</td>
-                    <td>online</td>
-                    <td>24/12/08</td>
-                    <td>Edit</td>
-                </tr>
-                <tr>
-                    <td>Brule Mans</td>
-                    <td>Manager</td>
-                    <td>offline</td>
-                    <td>10/10/21</td>
-                    <td>Edit</td>
-                </tr>
-                <tr>
-                    <td>Alexander</td>
-                    <td>Programator</td>
-                    <td>Offline</td>
-                    <td>14/09/20</td>
-                    <td>Edit</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div>
-        <h1 class="font-bold">Projects Table</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>COMPANIES</th>
-                    <th>MEMBERS</th>
-                    <th>BUDGET</th>
-                    <th>COMPLETION</th>
-                </tr>
-           </thead>
-           <tbody>
-                <tr>
-                    <td>Material XD Version</td>
-                    <td>profile</td>
-                    <td>$14,000</td>
-                    <td>60%</td>
-                    <td>:</td>
-                </tr>
-                <tr>
-                    <td>Add Progress Track</td>
-                    <td>Profile</td>
-                    <td>$3,000</td>
-                    <td>10%</td>
-                    <td>:</td>
-                </tr>
-                <tr>
-                    <td>Fix Platform Error</td>
-                    <td>profile</td>
-                    <td>Not Set</td>
-                    <td>100%</td>
-                    <td>:</td>
-                </tr>
-                <tr>
-                    <td>Launch Our Mobile App</td>
-                    <td>profile</td>
-                    <td>$20,500</td>
-                    <td>100%</td>
-                    <td>:</td>
-                </tr>
-                <tr>
-                    <td>Add the Next Pricing Page</td>
-                    <td>profile</td>
-                    <td>$500</td>
-                    <td>25%</td>
-                    <td>:</td>
-                </tr>
-                <tr>
-                    <td>Redesign New Online Shop</td>
-                    <td>Profile</td>
-                    <td>$2,000</td>
-                    <td>40%</td>
-                    <td>:</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+     <div>
+            <div>
+                <h1>Authors Table</h1>
+                <ejs-treegrid :dataSource="data1" :treeColumns="['name']" :allowPaging="true">
+                    <e-columns>
+                        <e-column field="Author" headerTemplate="'iconTemplate'" width="100"></e-column>
+                        <e-column field="Function" headerText="FUNCTION" width="150"></e-column>
+                        <e-column field="Status" headerText="STATUS" width="150"></e-column>
+                        <e-column field="Employed" headerText="EMPLOYED" width="150"></e-column>
+                    </e-columns>
+                    <template v-slot:iconTemplate1>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Johnmichael</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate2>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Alexa Liras</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate3>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Laurent Perrier</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate4>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Michellevi</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate5>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Bruce Mans</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate6>
+                        <div>
+                            <span class="e-icons e-profile e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Alexander</span>
+                        </div>
+                    </template>
+                </ejs-treegrid>
+            </div>
+            <div>
+                <h2>Projects Table</h2>
+                <ejs-treegrid :dataSource="data2" :treeColumns="['name']" :allowPaging="true">
+                    <e-columns>
+                        <e-column field="Companies" :headerTemplate="'iconTemplate'" width="100"></e-column>
+                        <e-column field="Members" headerText="MEMBERS" :headerTemplate="'iconTemplate'" width="150"></e-column>
+                        <e-column field="Budget" headerText="BUDGET" width="150"></e-column>
+                        <e-column field="Completion" headerText="COMPLETION" width="150"></e-column>
+                    </e-columns>
+                    <template v-slot:membersTemplate="{data}">
+                        <img: src="'https://ej2.syncfusion.com/vue/demos/source/tree-grid/images/'+ data.FullName + '.png'" alt="data.FullName"/>
+                    </template>
+                    <template v-slot:iconTemplate1>
+                        <div>
+                            <span class="e-icons e-xd e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Material XD Version</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate2>
+                        <div>
+                            <span class="e-icons e-progress e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Add Progress Track</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate3>
+                        <div>
+                            <span class="e-icons e-error e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Fix Platform Errors</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate4>
+                        <div>
+                            <span class="e-icons e-signal e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Launch Our Mobile App</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate5>
+                        <div>
+                            <span class="e-icons e-price e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Add the New Pricing Page</span>
+                        </div>
+                    </template>
+                    <template v-slot:iconTemplate6>
+                        <div>
+                            <span class="e-icons e-in e-font-icon" style="font-size: 15px;"></span>
+                            <span class="companies" style="padding-left:10px;">Redesign New Online Shop</span>
+                        </div>
+                    </template>
+                </ejs-treegrid>
+            </div>
+        </div>
 </template>
+    
+<script setup>
+import { TreeGridComponent, ColumnsDirective, ColumnDirective,Page } from "@syncfusion/ej2-vue-treegrid";
+export default{
+    Components:{
+        'ejs-treegrid': TreeGridComponents,
+        'e-columns': ColumnsDirective,
+        'e-column': ColumnDirective
+    }
+}
+import { ref } from 'vue';
 
+// Data for the first Authors Table
+const data1 = ref([
+  { Author: 'Johnmichael', Function: 'Manager', Status: 'Online', Employed: '23/04/18', Edit },
+  { Author: 'Alexa Liras', Function: 'Programator', Status: 'Offline', Employed: '23/04/18', Edit },
+  { Author: 'Laurent Perrier', Function: 'Executive', Status: 'Online', Employed: '11/01/19', Edit },
+  { Author: 'Michaellevi', Function: 'Programator', Status: 'Online', Employed: '19/09/17', Edit },
+  { Author: 'Bruce Mans', Function: 'Manager', Status: 'Offline', Employed: '10/10/21', Edit },
+  { Author: 'Alexander', Function: 'Programator', Status: 'Offline', Employed: '14/09/20', Edit },
+]);
 
+// Data for the Second Projects Table
+const data2 = ref([
+  { Companies: 'Material XD Version', Members: 'profile', Budget: '$14,000', Completion: 60% },
+  { Companies: 'Add Progress Track', Members: 'profile', Budget: '$3,000', Completion: 10% },
+  { Companies: 'Fix PlatformError', Members: 'profile', Budget: 'Not Set', Completion: 100% },
+  { Companies: 'Launch Our Mobile App', Members: 'profile', Budget: '$20,000', Completion: 100% },
+  { Companies: 'Add the New Pricing Page', Members: 'profile', Budget: '$500', Completion: 25% },
+  { Companies: 'Redesign New Online Shop', Members: 'profile', Budget: '$2,000', Completion: 40% }
+  ]);
+</script>
+
+<style>
+ @import "../node_module/@syncfusion/ej2-base/styles.css";
+    .Authors Table {
+       margin: 20px 0;
+    }
+    h1 {
+       text-align: center;
+    }
+    .Projects Table {
+       margin: 20px 0;
+    }
+    h2 {
+      text-align: center;
+    }
+</style>
