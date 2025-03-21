@@ -88,8 +88,10 @@ const data2 = ref([
   ]);
 </script>
 
-<style>
+<style scoped>
  @import "../node_module/@syncfusion/ej2-base/styles.css";
+ @import "~@syncfusion/ej2-base/styles.css";
+
     .Authors Table {
        margin: 20px 0;
     }
@@ -103,3 +105,4 @@ const data2 = ref([
       text-align: center;
     }
 </style>
+

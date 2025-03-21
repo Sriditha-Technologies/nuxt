@@ -90,7 +90,7 @@
             <h1 class="font-bold ">Projects</h1>
             <p>Architects design houses</p>
             <div class="cols-span-1">
-                <img src="~/asserts/images/home-decor-1.webp" alt="" />
+                <img src="~/asserts/images/home-decor-1.webp" alt="HomeDecor" />
                 <h1>Project #1</h1>
                 <p class="font-bold">Modern</p>
                 <p>As uber works through a huge amount of internal management turmoil.</p>
@@ -99,7 +99,7 @@
                 </button>
             </div> 
             <div class="cols-span-2">
-            <img src="~/assets/images/home-decor-2.webp" alt="" />
+            <img src="~/assets/images/home-decor-2.webp" alt="HomeDecor" />
             <h1>Project #2</h1>
                 <p class="font-bold">Scandinavin</p>
                 <p>Music is something that every person has his or her own specific opinion about.</p>
@@ -108,7 +108,7 @@
                 </button>
             </div>
             <div class="cols-span-3">
-                <img src="~/assets/images/home-decor-3.webp" alt="" />
+                <img src="~/assets/images/home-decor-3.webp" alt="HomeDecor" />
                 <h1>Project #3</h1>
                 <p class="font-bold">Minimalist</p>
                 <p>Different people have different taste, and various types on music.</p>
@@ -117,7 +117,7 @@
                 </button>
             </div>
             <div class="cols-span-4">
-                <img src="~/assets/images/home-decor-4.avif" alt="" />
+                <img src="~/assets/images/home-decor-4.avif" alt="HomeDecor" />
                 <h1>Project #4</h1>
                 <p class="font-bold">Gothic</p>
                 <p>Why would anyone pick blue over pink? Pink is obviously a better color.</p>
@@ -128,3 +128,6 @@
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+</script>

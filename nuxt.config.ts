@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },      
   },
 
-  modules: ['@nuxtjs/tailwindcss','@nuxtjs/google-fonts','@nuxt/icon','@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss','@nuxtjs/google-fonts','@nuxt/icon','@nuxt/image','@syncfusion/ej2-base/styles.css'],
   
   compatibilityDate: "2025-03-20"
 });

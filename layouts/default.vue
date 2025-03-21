@@ -1,5 +1,9 @@
-<script setup lang="ts">
-
+<script>
+export default {
+  mounted() {
+    require('@syncfusion/ej2-base/styles.css');
+  },
+}
 </script>
 
 <template>
