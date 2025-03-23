@@ -1,6 +1,6 @@
 <template>
-    <div class=" flex justify-center">
-        <form class="bg-blue-300 ">
+    <div class="bg-white flex justify-center">
+        <form class="bg-white-300 ">
             <h1 class="font-bold font-size:100px; text-black flex justify-left">ALERTS</h1>
             <center>
                 <div> 

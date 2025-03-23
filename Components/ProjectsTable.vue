@@ -24,7 +24,7 @@
   
   <script setup>
   import { ref } from 'vue';
-  import { projects } from '@/data/data';
+  import { projects } from '@/data/data.js';
   
   const projectList = ref(projects);
   </script>

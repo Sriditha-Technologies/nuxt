@@ -10,7 +10,7 @@
   </template>
   
   <script setup>
-  import { projects } from '@/data/userprofile.js';
+  import { projects } from '@/data/userdata.js';
   
   const projects = projects;
   </script>

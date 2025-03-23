@@ -1,13 +1,11 @@
 <template>
-    <div class="bg-white">
-        <div class="font-bold ml-4 p-4 flex justify-between">
-            <h1>ALERTS</h1>
-        </div>
-        <form class="shadow-md px-4 py-3 flex justify-center items-center">
+    <div class="bg-white flex justify-center">
+        <form>
+            <h1 class="font-bold font-size:100px; wl-5 p-5 text-black flex justify-between">ALERTS</h1>
             <center>
-                <div>
-                    <button class="bg-gray-600 shadow-lg  p-3 text-white text-lg flex justify-center">
-                       A simple gray alert with an example link. Give it a click if you like.                     
+                <div> 
+                    <button class="bg-gray-600 shadow-x1 p-3 text-white text-lg flex justify-center">
+                       A simple gray alert with an example link. Give it a click if you like.
                     </button>
                 </div>
                 <br />
@@ -37,11 +35,9 @@
 
            
             
-    <div class="bg-white">
-        <div class="font-bold ml-4 p-4 flex justify-between">
-            <h1>ALERTS WITH ICONS</h1>
-        </div>
-        <form class="shadow-md px-4 py-3 flex justify-center items-center">
+    <div class="bg-white flex justify-center">
+        <form>
+            <h1 class="font-bold font-size:100px; wl-5 p-5 text-black flex justify-left">ALERTS WITH ICONS</h1>
             <center>
                 <div>
                     <button class="bg-gray-600 shadow-lg p-3 text-white text-lg flex justify-center">

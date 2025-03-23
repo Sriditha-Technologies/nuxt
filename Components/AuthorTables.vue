@@ -28,7 +28,7 @@
   
   <script setup>
   import { ref } from 'vue';
-  import { authors } from '@/data/data';
+  import { authors } from '@/data/data.js';
   
   const authorList = ref(authors);
   

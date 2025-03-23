@@ -20,7 +20,7 @@
   </template>
   
   <script setup>
-  import { userProfile } from '@/data/userprofile.js';
+  import { userProfile } from '@/data/userdata.js';
   
   const profile = userProfile;
   </script>

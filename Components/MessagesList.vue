@@ -10,7 +10,7 @@
   </template>
   
   <script setup>
-  import { messages } from '@/data/userprofile.js';
+  import { messages } from '@/data/userdata.js';
   
   const messages = messages;
   </script>

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   alias:{
     "@":resolve(__dirname,"/"),
   },
+  
 
   css:["~/assets/css/main.css","~/assets/css/styles.css"],
   build: {
