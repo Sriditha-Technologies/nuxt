@@ -1,20 +1,19 @@
 <template>
-    <div>
+    <div class="bg-white shadow-md px-4 py-3 flex justify-center items-center">
        <center><h1 class="font-bold">Sign In</h1>
-       <form>
         <P>Enter your email and password to sign in.</P>
         <div>
-          <label for="Your Email">Your Email</label>
-          <input type="text" Placeholder="Your Email" required />
+          <label for="Your Email">Your Email</label><br />
+          <input type="text" placeholder="Your Email" class="p-2 border border-gray-300 rounded" />
         </div>
         <div>
-          <label for="password">Password</label>
-          <input type="password" Placeholder="password" required />
+          <label for="password">Password</label><br />
+          <input type="text" placeholder="Password" class="p-2 border border-gray-300 rounded" />
         </div>
         <input type="checkbox"> I agree the <u>Terms and conditions</u>
-        <br />
-        <button type="submit" class="inline-block px-7 px-3 bg-blue-600 text-white font-medium">Sign In</button>
-       </form>
+        <div>
+          <button type="submit" class="inline-black px-7  bg-blue-600 text-white font-medium">Sign In</button>
+        </div>
        <br />
         <input type="checkbox"> Subscribe me to newsletter Forgot password<br />
         <icon name="logos:google-icon"></icon>Sign in with google<br />

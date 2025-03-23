@@ -1,6 +1,6 @@
 <template>
-    <div class="grid-flow-row grid-columns-3 gap-4">
-        <div class="row-span-1 cols-span-1 gap-4">
+    <div class="grid grid-cols-3 gap-4">
+        <div class="row-span-1 col-span-1 gap-4">
             <div>
                <h1>Richard Davis</h1>
             </div>
@@ -46,7 +46,8 @@
             </div>
             <div class="row-span-2 cols-span-2">
                 <label>First Name : Alec M.Thomson</label><br />
-                <label>Mobile : (44)123 1234 123</label><br />                    <label>Email : alecthompson@gmail.com</label><br />
+                <label>Mobile : (44)123 1234 123</label><br />                   
+                <label>Email : alecthompson@gmail.com</label><br />
                 <label>Location : USA</label><br />
                 <label>Social : @facebook @twitter </label><br />
             </div>
@@ -90,7 +91,7 @@
             <h1 class="font-bold ">Projects</h1>
             <p>Architects design houses</p>
             <div class="cols-span-1">
-                <img src="~/asserts/images/home-decor-1.webp" alt="HomeDecor" />
+                <img width="100" src="home-decor-1.webp" alt="Home Decor 1" />
                 <h1>Project #1</h1>
                 <p class="font-bold">Modern</p>
                 <p>As uber works through a huge amount of internal management turmoil.</p>
@@ -99,8 +100,8 @@
                 </button>
             </div> 
             <div class="cols-span-2">
-            <img src="~/assets/images/home-decor-2.webp" alt="HomeDecor" />
-            <h1>Project #2</h1>
+                <img width="100" src="home-decor-2.webp" alt="Home Decor 2" />
+                <h1>Project #2</h1>
                 <p class="font-bold">Scandinavin</p>
                 <p>Music is something that every person has his or her own specific opinion about.</p>
                 <button class="px-4 py-2 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer">
@@ -108,7 +109,7 @@
                 </button>
             </div>
             <div class="cols-span-3">
-                <img src="~/assets/images/home-decor-3.webp" alt="HomeDecor" />
+                <img width="100" src="home-decor-3.webp" alt="Home Decor 3" />
                 <h1>Project #3</h1>
                 <p class="font-bold">Minimalist</p>
                 <p>Different people have different taste, and various types on music.</p>
@@ -117,7 +118,7 @@
                 </button>
             </div>
             <div class="cols-span-4">
-                <img src="~/assets/images/home-decor-4.avif" alt="HomeDecor" />
+                <img width="100" src="home-decor-4.avif" alt="Home Decor 4" />
                 <h1>Project #4</h1>
                 <p class="font-bold">Gothic</p>
                 <p>Why would anyone pick blue over pink? Pink is obviously a better color.</p>
@@ -130,4 +131,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+import HomeDecor1 from '~/public/images/home-decor-1.wepb';
+import HomeDecor2 from '~/public/images/home-decor-2.wepb';
+import HomeDecor3 from '~/public/images/home-decor-3.wepb';
+import HomeDecor4 from '~/public/images/home-decor-4.wepb';
 </script>

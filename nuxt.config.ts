@@ -18,7 +18,11 @@ export default defineNuxtConfig({
     },      
   },
 
-  modules: ['@nuxtjs/tailwindcss','@nuxtjs/google-fonts','@nuxt/icon','@nuxt/image','@syncfusion/ej2-base/styles.css'],
-  
+  modules: ['@nuxtjs/tailwindcss','@nuxt/icon','@nuxt/image','@nuxtjs/google-fonts'],
+  plugins: ['~/plugins/fontawesome.js'],
+  css: [
+    './assets/css/main.css',
+    'tailwindcss/tailwind.css'
+  ],
   compatibilityDate: "2025-03-20"
 });

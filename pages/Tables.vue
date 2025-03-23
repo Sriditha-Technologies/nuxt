@@ -2,7 +2,7 @@
      <div>
             <div>
                 <h1>Authors Table</h1>
-                <ejs-treegrid :dataSource="data1" :treeColumns="['name']" :allowPaging="true">
+                <ejs-treegrid>
                     <e-columns>
                         <e-column field="Author" headerText="AUTHOR" width="100"></e-column>
                         <e-column field="Function" headerText="FUNCTION" width="150"></e-column>
@@ -13,7 +13,7 @@
             </div>
             <div>
                 <h2>Projects Table</h2>
-                <ejs-treegrid :dataSource="data2" :treeColumns="['name']" :allowPaging="true">
+                <ejs-treegrid>
                     <e-columns>
                         <e-column field="Companies" :headerTemplate="'iconTemplate'" width="100"></e-column>
                         <e-column field="Members" headerText="MEMBERS" :headerTemplate="'iconTemplate'" width="150"></e-column>
@@ -65,8 +65,6 @@
 </template>
     
 <script setup>
-import { TreeGridComponent, ColumnsDirective, ColumnDirective,Page } from "@syncfusion/ej2-vue-treegrid";
-
 // Data for the first Authors Table
 const data1 = ref([
   { Author: 'Johnmichael', Function: 'Manager', Status: 'Online', Employed: '23/04/18', Edit },
@@ -89,9 +87,6 @@ const data2 = ref([
 </script>
 
 <style scoped>
- @import "../node_module/@syncfusion/ej2-base/styles.css";
- @import "~@syncfusion/ej2-base/styles.css";
-
     .Authors Table {
        margin: 20px 0;
     }
