@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-64 bg-white shadow-md">
+  <aside class="wt-64 bg-white shadow-md">
     <div class="p-5">
       <h1 class="font-bold justify-center">Material Tailwind React</h1>
     </div>
